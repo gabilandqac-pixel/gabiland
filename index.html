@@ -14,7 +14,7 @@
 <script>
 'use strict';
 const URL='https://wcufjmpvljcziirhclek.supabase.co';
-const KEY='sb_publishable_58zfBC2Ol3o4SqZFmI92sQ_JPQXObdz';
+  const KEY='sb_publishable_58zfBC2Ol3o4SqZFmI92sQ_JPQXObdz';
 const db=window.supabase.createClient(URL,KEY);
 const $=id=>document.getElementById(id), escapeHtml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let user=null,profile=null,events=[],event=null,tickets=[],reservations=[],payments=[],logs=[],staff=[],scanner=null,scanning=false;
